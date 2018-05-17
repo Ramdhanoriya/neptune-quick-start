@@ -1,2 +1,2 @@
-# neptune-quick-start
-start models' training with neptune.ml right now
+# neptune_first_steps
+First Steps with neptune
