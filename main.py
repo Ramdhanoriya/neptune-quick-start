@@ -21,6 +21,16 @@ BATCH_SIZE = ctx.params.batch_size
 LEARNING_RATE = ctx.params.learning_rate
 INPUT_SHAPE = (1, 28, 28)
 CLASSES = 10
+CLASS_NAMES = ['t-shirt',
+               'trouser',
+               'pullover',
+               'dress',
+               'coat',
+               'sandal',
+               'shirt',
+               'sneaker',
+               'bag',
+               'ankle boot']
 
 
 def load_data():
@@ -119,7 +129,9 @@ def train(model, optimizer, criterion, batch_generator_train, batch_generator_ev
         for i, (image, true, pred) in enumerate(misclassified):
             pill_image = array_to_pil(image)
             ctx.channel_send('Misclassified Images', neptune.Image(name='epoch{}_id{}'.format(epoch_id, i),
-                                                                   description="true: {} pred: {}".format(true, pred),
+                                                                   description="true: {} pred: {}".format(
+                                                                       CLASS_NAMES[true],
+                                                                       CLASS_NAMES[pred]),
                                                                    data=pill_image))
 
 
