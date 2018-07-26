@@ -29,7 +29,8 @@ neptune account login
 Now you can run your experiment in the cloud with one simple command
 
 ```bash
-neptune send main.py --config neptune.yaml\
+neptune send --config neptune.yaml\
 --worker gcp-gpu-medium \
---environment pytorch-0.3.0-gpu-py3 
+--environment pytorch-0.3.0-gpu-py3 \
+main.py
 ```
