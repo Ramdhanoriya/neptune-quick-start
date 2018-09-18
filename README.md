@@ -8,7 +8,7 @@ Clone this repository
 git clone https://github.com/neptune-ml/neptune-quick-start.git
 ```
 
-and go to the project foldder
+and go to the project folder
 
 ```bash
 cd neptune-quick-start
