@@ -34,3 +34,5 @@ neptune send --config neptune.yaml \
 --environment pytorch-0.3.1-gpu-py3 \
 main.py
 ```
+
+You can check example experiment [here](https://app.neptune.ml/-/dashboard/experiment/e70a461a-8e5a-4e76-b0d2-a81f551e611e/charts?getStartedState=folded)
