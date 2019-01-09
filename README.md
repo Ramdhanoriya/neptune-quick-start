@@ -36,3 +36,5 @@ main.py
 ```
 
 You can check example experiment [here](https://app.neptune.ml/-/dashboard/experiment/e70a461a-8e5a-4e76-b0d2-a81f551e611e/charts?getStartedState=folded)
+
+![image](https://gist.githubusercontent.com/jakubczakon/f754769a39ea6b8fa9728ede49b9165c/raw/635a78f270e0c27347828e2761858e0762713a7a/neptune_quick_start.png)
