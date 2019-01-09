@@ -1,8 +1,9 @@
+# project: USERNAME/sandbox
+
 parameters:
-  epoch_nr: 50
-  batch_size: 32
-  learning_rate: 0.001
-  dense_units: 100
+  epoch_nr: 5
+  batch_size: 64
+  dropout: 0.02
 
 exclude:
   - output

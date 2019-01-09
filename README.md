@@ -30,8 +30,8 @@ Now you can run your experiment in the cloud with one simple command
 
 ```bash
 neptune send --config neptune.yaml \
---worker m-k80 \
---environment pytorch-0.3.1-gpu-py3 \
+--worker xs-k80-preemptible \
+--environment keras-2.2-gpu-py3 \
 main.py
 ```
 
